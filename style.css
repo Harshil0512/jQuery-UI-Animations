@@ -1,0 +1,33 @@
+.main
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
+}
+button
+{
+    background-color: aqua;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #111;
+    border-style: none;
+    cursor: hand;
+}
+img
+{
+    max-width: 100  px;
+}
+.button-group
+{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}

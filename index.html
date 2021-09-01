@@ -1,0 +1,223 @@
+        <html>
+            <head>
+                <title>Animation</title>
+            </head>
+            <link type="text/css" rel="stylesheet" href="style.css"></link>
+            <script src="jquery-1.11.3.js"></script>
+            <script src="jquery-ui.js"></script>
+            <body>
+                <main class="main">
+                    <section>
+                        <img src="demo.jpg" id="img1">
+                        <div class="button-group">
+                            <button type="button" id="hide">Hide</button>
+                            <button type="button" id="show">Show</button>
+                        </div>
+                    </section>
+                    <section>
+                        <img src="demo.jpg" id="img2">
+                        <div class="button-group">
+                            <button type="button" id="fadein">Fade In</button>
+                            <button type="button" id="fadeout">Fade Out</button>
+                        </div>
+                    </section>
+                    <section>
+                        <img src="demo.jpg" id="img3">
+                        <div class="button-group">
+                            <button type="button" id="explode">Explode</button>
+                            <button type="button" id="restore">Restore</button>
+                        </div>
+                    </section>
+                    <section>
+                        <img src="demo.jpg" id="img4">
+                        <div class="button-group">
+                            <button type="button" id="bounce">Bounce</button>
+                        </div>
+                    </section>
+                    <section>
+                        <img src="demo.jpg" id="img5">
+                        <div class="button-group">
+                            <button type="button" id="slide">Slide</button>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img6">
+                    <div class="button-group">
+                        <button type="button" id="blind">Blind</button>
+                        <button type="button" id="restore1">Restore</button>
+                    </div>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img7">
+                    <div class="button-group">
+                        <button type="button" id="clip">Clip</button>
+                        <button type="button" id="restore2">Restore</button>
+                    </div>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img8">
+                    <div class="button-group">
+                        <button type="button" id="drop">Drop</button>
+                        <button type="button" id="restore3">Restore</button>
+                    </div>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img9">
+                    <div class="button-group">
+                        <button type="button" id="fold">Fold</button>
+                        <button type="button" id="restore4">Restore</button>
+                    </div>
+                </section>
+                <section>
+                    <h1 style="word-wrap: break-word; max-width: 300px; text-align: center; font-family: arial;justify-content: center;" id="text">Click Highlight to Highlight This Text</h1>
+                    <div class="button-group">
+                        <button type="button" id="highlight">Highlight</button>
+                    </div>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img10">
+                    <div class="button-group">
+                        <button type="button" id="puff">Puff</button>
+                        <button type="button" id="restore5">Restore</button>
+                    </div>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img11">
+                    <div class="button-group">
+                        <button type="button" id="pulsate">Pulsate</button>
+                    </div>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img12">
+                    <div class="button-group">
+                        <button type="button" id="shake">Shake</button>
+                    </div>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img13">
+                    <div class="button-group">
+                        <button type="button" id="scale">Scale</button>
+                    </div>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img14">
+                    <div class="button-group">
+                        <button type="button" id="size">Size</button>
+                        <button type="button" id="restore6">Restore</button>
+                    </div>
+                </section>
+                <section>
+                    <img src="demo.jpg" id="img15">
+                    <div class="button-group">
+                        <button type="button" id="transfer">Transfer</button>
+                        <button type="button" id="restore6">Restore</button>
+                    </div>
+                </section>
+                </main>
+            </body>
+            <script>
+                $("document").ready(function(){
+                    $("#hide").click(function(){
+                        $("#img1").hide();
+                    });
+            
+                    $("#show").click(function(){
+                        $("#img1").show();
+                    });
+            
+                    $("#fadein").click(function(){
+                        $("#img2").fadeIn();
+                    });
+            
+                    $("#fadeout").click(function(){
+                        $("#img2").fadeOut();
+                    });
+                    
+                    $("#explode").click(function(){
+                        $("#img3").effect("explode");
+                    });
+
+                    $("#restore").click(function(){
+                        $("#img3").show();
+                    });
+
+                    $("#bounce").click(function () {
+                        $("#img4").effect("bounce","slow");
+                    });
+
+                    $("#slide").click(function () {
+                        $("#img5").effect("slide");
+                    });
+
+                    $("#blind").click(function () {
+                        $("#img6").effect("blind");
+                    });
+
+                    $("#restore1").click(function () {
+                        $("#img6").show();
+                    });
+
+                    $("#clip").click(function () {
+                        $("#img7").effect("clip");
+                    });
+
+                    $("#restore2").click(function () {
+                        $("#img7").show();
+                    });
+
+                    $("#drop").click(function () {
+                        $("#img8").effect("drop");
+                    });
+                    
+                    $("#restore3").click(function () {
+                        $("#img8").show();
+                    });
+
+                    $("#fold").click(function () {
+                        $("#img9").effect("fold");
+                    });
+                    
+                    $("#restore4").click(function () {
+                        $("#img9").show();
+                    });
+
+                    $("#highlight").click(function () {
+                        $("#text").effect("highlight");
+                    });
+
+                    $("#puff").click(function () {
+                        $("#img10").effect("puff");
+                    });
+                    
+                    $("#restore5").click(function () {
+                        $("#img10").show();
+                    });
+
+                    $("#pulsate").click(function () {
+                        $("#img11").effect("pulsate");
+                    });
+                    
+                    $("#shake").click(function () {
+                        $("#img12").effect("shake");
+                    });
+
+                    $("#scale").click(function () {
+                        $("#img13").toggle("scale");
+                    });
+
+                    $("#size").click(function () {
+                        $("#img14").effect("size",{to:{width:450,height:150}});
+                    });
+
+                    $("#restore6").click(function () {
+                        $("#img14").effect("size",{to:{width:300,height:300}});
+                    });
+
+                    $("#transfer").click(function () {
+                        $("#img15").effect("transfer");
+                    });
+                });
+
+            </script>
+        </html>
